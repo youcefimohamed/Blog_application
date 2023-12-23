@@ -1,0 +1,134 @@
+.tablee-container {
+   display: flex;
+   height: calc(100vh - 235px);
+   overflow: hidden;
+}
+
+.tablee-wrapper {
+   flex: 10;
+   padding: 20px;
+   overflow-y: scroll;
+}
+
+.tablee-title {
+   font-size: 30px;
+   color: var(--secondary-color);
+   margin-bottom: 15px;
+   border-bottom: 2px solid var(--secondary-color);
+   padding-bottom: 3px;
+   width: max-content;
+}
+
+.tablee {
+   width: 100%;
+   text-align: left;
+   border-collapse: collapse;
+}
+
+th,
+td {
+   border: 1px solid #cacaca;
+   padding: 10px;
+}
+
+th {
+   background-color: var(--primary-color);
+   color: var(--white-color);
+}
+
+tr:nth-child(even) {
+   background-color: var(--white-color)
+}
+
+tr:hover {
+   background-color: #ddd;
+}
+
+.tablee-image {
+   display: flex;
+   align-items: center;
+}
+
+.tablee-user-image {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.tablee-username {
+   font-weight: 500;
+   font-size: 15px;
+   margin-left: 5px;
+}
+
+.tablee-button-group {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.tablee-button-group button {
+   border: none;
+   background-color: var(--green-color);
+   color: var(--white-color);
+   border-radius: 5px;
+   font-size: 17px;
+   font-weight: 500;
+   padding: 5px;
+   cursor: pointer;
+}
+
+.tablee-button-group button:last-child {
+   background-color: var(--red-color);
+}
+
+.tablee-button-group button:first-child:hover {
+   background-color: green;
+}
+
+.tablee-button-group button:last-child:hover {
+   background-color: red;
+}
+
+.tablee-button-group button a {
+   color: var(--white-color);
+}
+
+/* Media Queries */
+@media (max-width: 720px) {
+   .tablee-wrapper {
+       padding: 15px;
+   }
+
+   .tablee-button-group {
+       flex-wrap: wrap;
+   }
+
+   .tablee-button-group button {
+       width: 100%;
+       margin: 10px 0;
+   }
+
+   th,
+   td {
+       padding: 5px;
+   }
+
+   .tablee-image {
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+   }
+}
+
+@media (max-width: 520px) {
+   .tablee-wrapper {
+       padding: 5px;
+   }
+
+   th,
+   td {
+       padding: 2px;
+   }
+}

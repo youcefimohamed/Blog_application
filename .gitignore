@@ -1,0 +1,13 @@
+
+node_modules/
+build/
+dist/
+.idea/
+.vscode/
+backup/
+old/
+
+.env
+*.log
+*.bak
+*.tmp

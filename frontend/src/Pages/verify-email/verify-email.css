@@ -1,0 +1,55 @@
+.verify-email{
+   height: calc(100vh - 200px);
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.verify-email-icon{
+   font-size: 80px;
+   color: var(--green-color);
+}
+
+.verify-email-title{
+   font-size: 32px;
+   margin-bottom: 20px ;
+   color: var(--green-color);
+   font-weight: bold;
+}
+.verify-email-link{
+   font-size: 24px;
+   font-weight: 600;
+   background-color: var(--primary-color);
+   padding: 5px;
+   border-radius: 5px;
+   color: var(--white-color);
+}
+.verify-email-not-found{
+   font-size: 40px;
+   color: var(--red-color);
+}
+
+@media( max-width : 767px){
+   .verify-email-icon{
+      font-size: 60px;
+   }
+   .verify-email-title{
+      font-size: 25px;
+   }
+   .verify-email-link{
+      font-size: 18px;
+   }
+}
+@media( max-width : 580px){
+   .verify-email-icon{
+      font-size: 50px;
+   }
+   .verify-email-title{
+      font-size: 20px;
+      text-align: center;
+   }
+   .verify-email-link{
+      font-size: 16px;
+   }
+}
