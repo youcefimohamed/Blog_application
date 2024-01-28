@@ -22,7 +22,7 @@ export default function Header() {
       <header className="headers">
          <div className="headers-left">
             <Link to='/' className="headers-logo">
-               <strong>BLOG</strong>
+               <strong>CyberBlog</strong>
                <i className="bi bi-pencil"></i>
             </Link>
             <div onClick={() => { settoggle(prev => !prev) }} className="headers-menu">
