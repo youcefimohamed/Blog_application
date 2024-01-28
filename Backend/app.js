@@ -11,7 +11,15 @@ connectDB()
 
 // init  APP
 const app = express()
+app.use(cors(
+   {
 
+      origin :["https://blog-application-wheat-ten.vercel.app/"],
+      methods:["POST","GET"],
+      credentials:true
+   }
+
+))
 //Middelewares
 app.use(express.json())
 
